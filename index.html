@@ -182,6 +182,17 @@
     <script type="text/javascript" src="./js/question.js"></script>
     <script type="text/javascript" src="./js/result.js"></script>
     <script type="text/javascript">
+        setTimeout(() => {
+            const calc = $("#before-result");
+
+            calc.style.animation = "";
+            calc.style.animation =
+                'going-left 0.4s forwards, ' +
+                'fade-out 0.4s forwards';
+                setTimeout(() => {mbti_result();}, 400);
+        }, 9000);
+    </script>
+    <script type="text/javascript">
         var num = 1;
         function start() {
             $(".start").hide();
